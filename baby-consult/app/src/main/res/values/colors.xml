@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#373836</color>
+    <color name="underline">#5aef4c</color>
+    <color name="a">#dcdfe5</color>
+    <color name="white">#373836</color>
+    <color name="bglogin">#5aef4c</color>
+    <color name="toolbar">#4df956</color>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bagus.skripsi.Antropometri">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/the"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/height"
+                android:padding="10dp"
+                android:layout_below="@+id/the"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="CM"
+                android:background="@drawable/underline"/>
+
+            <TextView
+                android:id="@+id/twe"
+                android:layout_below="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/weight"
+                android:padding="10dp"
+                android:layout_below="@+id/twe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="KG"
+                android:background="@drawable/underline"/>
+
+            <TextView
+                android:id="@+id/tage"
+                android:layout_below="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Umur"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/age"
+                android:padding="10dp"
+                android:layout_below="@+id/tage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Bulan"
+                android:background="@drawable/underline"/>
+
+            <TextView
+                android:id="@+id/tge"
+                android:layout_below="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textSize="20dp" />
+
+            <RadioGroup
+                android:id="@+id/grop"
+                android:layout_below="@+id/tge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_below="@+id/grop"
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:text="Laki-laki"/>
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_toRightOf="@+id/male"
+                    android:layout_below="@+id/grop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perempuan" />
+            </RadioGroup>
+            <Button
+                android:id="@+id/go"
+                android:layout_below="@+id/grop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:text="SIMPAN"
+                android:textSize="15dp"
+                android:textColor="@color/colorAccent"/>
+            <Button
+                android:id="@+id/reset"
+                android:layout_below="@+id/grop"
+                android:layout_toRightOf="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reset"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:text="RESET"
+                android:textSize="15dp"
+                android:textColor="@color/colorAccent"/>
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>
